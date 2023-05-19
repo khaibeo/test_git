@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt mua</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">Khải <span>hub</span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Khóa học</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="order.html">Đặt mua</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="order">
+            <div class="form-order">
+                <h2>Thông tin đặt mua</h2>
+                <form action="" method="" class="form" id="form-order">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input id="name" tabindex="1" type="text" placeholder="VD: Ma Văn Khải" class="form-control">
+                    <span class="error error-name"></span>
+                </div>
+                <div class="form-group">
+                    <label for="cmt">Chứng minh thư</label>
+                    <input id="cmt" tabindex="2" type="text" placeholder="VD: 012345678910" class="form-control">
+                    <span class="error error-cmt"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" tabindex="3" type="email" placeholder="VD: email@domain.com" class="form-control">
+                    <span class="error error-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Số điện thoại</label>
+                    <input id="tel" tabindex="4" type="tel" placeholder="VD: 0965067595" class="form-control">
+                    <span class="error error-tel"></span>
+                </div>
+                <div class="form-group">
+                    <label for="">Khóa học muốn mua</label>
+                    <select name="course" id="courses" class="form-control">
+                        <option value="1" selected>1. HTML CSS từ Zero đến Hero</option>
+                        <option value="2">2. Javascript từ A tới Á</option>
+                        <option value="3">3. ReactJS Siêu cấp VIP PRO</option>
+                    </select>
+                    <span class="error error-courses"></span>
+                </div>
+                <button class="form-btn" type="reset" onclick="resetForm()"><i class="ti-reload"></i></button>
+                <button id="btn-submit" class="form-btn" onclick="validate()">Đặt mua</button>
+                <p><b>Cảm ơn bạn đã tin tưởng và tham gia khóa học của mình. Mình sẽ phản hồi trong thời gian sớm nhất !</b></p>
+            </form>
+            <table id="table" border="1">
+                
+            </table>
+            </div>
+        </div>
+        <hr>
+        <div class="courses">
+            <div class="title text-center" >Khóa học của mình</div>
+            <div class="list-course">
+                <a href="#" class="course">
+                    <div class="course-info text-center">
+                        <div class="img">
+                            <img src="img/htmlcss.jpg" width="100%" height="200px" alt="">
+                        </div>
+                        <div class="name">
+                            <h3>HTML CSS từ Zero đến Hero</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course">
+                    <div class="course-info text-center">
+                        <div class="img">
+                            <img src="img/js.webp" width="100%" height="200px" alt="">
+                        </div>
+                        <div class="name">
+                            <h3>Javascript từ A tới Á</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course">
+                    <div class="course-info text-center">
+                        <div class="img">
+                            <img src="img/reactjs.webp" width="100%" height="200px" alt="">
+                        </div>
+                        <div class="name">
+                            <h3>ReactJS Siêu cấp VIP PRO</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="more-info">
+            <div>
+                <h3>Chính sách & Điều khoản</h3>
+                <a href="">Chính sách bảo mật</a>
+                <a href="">Điều khoản</a>
+                <a href="">RSS Feed</a>
+            </div>
+            <div>
+                <h3>Sản phẩm</h3>
+                <a href="">Khóa học</a>
+                <a href="">Bài viết</a>
+                <a href="">Ebook chinh phục nhà tuyển dụng</a>
+            </div>
+            <div>
+                <h3>Hệ sinh thái</h3>
+                <a href="">Facebook của Khải</a>
+                <a href="">Youtube Khải Béo</a>
+                <a href="">Tiktok Khải Béo</a>
+                <a href="">Github</a>
+            </div>
+            <div>
+                <h3>Giới thiệu</h3>
+                <p>Phát triển bởi Ma Văn Khải vào năm 2023, là blog cá nhân chia sẻ kiến thức IT, Marketing và cung cấp các khóa học chất lượng giúp mọi người level up kỹ năng của bản thân nhanh nhất.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <p class="copyright">
+                Copyright © 2023 Ma Văn Khải
+            </p>
+            <div class="social">
+                <a class="ti-facebook" href=""><i></i></a>
+                <a class="ti-instagram" href=""><i></i></a>
+                <a class="ti-pinterest-alt" href=""><i></i></a>
+                <a class="ti-twitter" href=""><i></i></a>
+                <a class="ti-linkedin" href=""><i></i></a>
+                <a class="ti-themify-favicon-alt" href=""><i></i></a>
+            </div> 
+        </div>
+    </div>
+    <script src="validate.js"></script>
+    <script src="sweetalert.js"></script>
+</body>
+</html>
